@@ -1,0 +1,70 @@
+/* Container for all item cards (assumes a parent flex or grid layout) */
+.ItemCard {
+  width: 220px;
+  margin: 10px;
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image container */
+.ItemPoster {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+}
+
+/* Overlay for buttons (centered below image) */
+.itemoverlay {
+  margin-top: 8px;
+}
+
+/* +/- Button group styling */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button button {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button button:hover {
+  background-color: #0056b3;
+}
+
+/* Item title and cost */
+.item_info {
+  padding: 10px 0;
+}
+
+.item_info h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.item_info p {
+  font-size: 16px;
+  color: #555;
+}
